@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wolf & Scout Protocol | Hannibal System</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Space+Mono:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* Elite Brutalist Aesthetics */
+        body { 
+            background-color: #070707; /* Almost pure black */
+            color: #ffffff; 
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .font-oswald { font-family: 'Oswald', sans-serif; }
+        .font-mono-tech { font-family: 'Space Mono', monospace; }
+
+        /* Hard edges, no rounded corners */
+        .sharp-box {
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: #0a0a0a;
+        }
+
+        .hover-target:hover {
+            border-color: rgba(255, 255, 255, 0.8);
+            background: rgba(255, 255, 255, 0.05);
+            transition: all 0.2s ease;
+        }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #070707; }
+        ::-webkit-scrollbar-thumb { background: #333; }
+        ::-webkit-scrollbar-thumb:hover { background: #666; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col relative overflow-x-hidden selection:bg-red-700 selection:text-white">
+
+    <header class="relative z-20 border-b border-white/10 bg-[#070707]">
+        <div class="container mx-auto px-6 py-6 lg:px-12">
+            <div class="flex items-center justify-between">
+                <!-- Clean Logo -->
+                <div class="flex items-center w-24 md:w-32">
+                    <img src="Hove rfc new.png" alt="Hove RFC Logo" class="w-full h-auto object-contain drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+                </div>
+                
+                <!-- System Header -->
+                <div class="text-right mt-2 md:mt-0 flex flex-col items-end">
+                    <div class="font-oswald text-xs sm:text-sm tracking-[0.2em] uppercase mb-2 flex gap-1 sm:gap-2">
+                        <span class="text-white">Hostile.</span>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-[#5a0000] font-bold">Intense.</span>
+                        <span class="text-white">Technical.</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-oswald font-bold tracking-tighter uppercase text-white leading-none flex flex-col md:flex-row md:gap-3 text-right items-end">
+                        <span>Hannibal</span> 
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#418fde] to-[#0a1128]">System</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="relative z-10 flex-grow">
+        
+        <!-- Hero Section -->
+        <section class="py-12 md:py-16 border-b border-white/5 relative overflow-hidden bg-gradient-to-b from-[#0a0a0a] to-[#070707]">
+            <div class="container mx-auto px-6 lg:px-12 relative z-10">
+                <div class="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center">
+                    
+                    <div class="lg:w-1/2 w-full">
+                        <p class="font-mono-tech text-red-600 mb-4 tracking-widest text-sm uppercase">Edge Defence Execution</p>
+                        <h2 class="font-oswald text-[13vw] lg:text-[7rem] font-bold uppercase leading-[0.85] tracking-tighter text-white mb-6">
+                            Wolf <br>
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-[#4a0000]">& Scout</span>
+                        </h2>
+                        <div class="flex flex-wrap gap-4 font-mono-tech text-sm uppercase tracking-wider">
+                            <span class="border border-white/20 px-3 py-1 bg-white/5 text-white">Range: Medium/Long</span>
+                            <span class="border border-red-900/80 px-3 py-1 bg-red-950/20 text-red-500">Risk vs Reward</span>
+                        </div>
+                    </div>
+
+                    <!-- Breakdown Positioning Image (GIF) -->
+                    <div class="lg:w-1/2 w-full">
+                        <div class="sharp-box p-2 relative group">
+                            <!-- Tactical Corner Accents -->
+                            <div class="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-red-600"></div>
+                            <div class="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-red-600"></div>
+                            <div class="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-red-600"></div>
+                            <div class="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-red-600"></div>
+                            
+                            <!-- Implemented the GIF here -->
+                            <img src="Wolf and Scout.gif" alt="Wolf and Scout Execution" class="w-full h-auto opacity-90 group-hover:opacity-100 transition-opacity duration-300 filter contrast-125 grayscale-[10%]">
+                            
+                            <div class="absolute bottom-4 right-4 bg-black/80 backdrop-blur-sm border border-white/10 px-3 py-1">
+                                <p class="font-mono-tech text-xs text-red-500 uppercase tracking-widest">Edge Architecture</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Non-Negotiables: Connection & Channel Enforcement -->
+        <section class="py-16 border-b border-white/5 bg-[#0a0a0a]">
+            <div class="container mx-auto px-6 lg:px-12">
+                <div class="flex items-center gap-4 mb-10">
+                    <div class="w-12 h-[2px] bg-white"></div>
+                    <h3 class="font-oswald text-3xl md:text-4xl text-white uppercase tracking-wider">The Non-Negotiables</h3>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Condition to Fire -->
+                    <div class="sharp-box p-8 hover-target border-l-4 border-l-[#2563eb]">
+                        <h4 class="font-oswald text-4xl text-white uppercase mb-4 tracking-tight">System Integrity</h4>
+                        <p class="font-mono-tech text-neutral-400 text-sm uppercase mb-6 tracking-widest border-b border-white/10 pb-4">Only When Connected</p>
+                        <ul class="space-y-4 font-inter font-light text-neutral-300 text-lg">
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-link text-[#3b82f6] mt-1 text-sm"></i>
+                                <span>Wolf protocols are invalid if the inside line is broken. Connection dictates action.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-link text-[#3b82f6] mt-1 text-sm"></i>
+                                <span>Assess risk vs reward based on pitch geography (points down, points up).</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-link text-[#3b82f6] mt-1 text-sm"></i>
+                                <span>Calculate the 1v1, 1v2, and 2v2 scenarios before pulling the trigger.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Channel Enforcement -->
+                    <div class="sharp-box p-8 hover-target border-l-4 border-l-red-600">
+                        <h4 class="font-oswald text-4xl text-white uppercase mb-4 tracking-tight">Channel Enforcement</h4>
+                        <p class="font-mono-tech text-neutral-400 text-sm uppercase mb-6 tracking-widest border-b border-white/10 pb-4">Dictate The Edge</p>
+                        <ul class="space-y-4 font-inter font-light text-neutral-300 text-lg">
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-shield-halved text-red-500 mt-1 text-sm"></i>
+                                <span>Never get beaten on the outside. Force all edge play back into the B channel into our traffic.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-shield-halved text-red-500 mt-1 text-sm"></i>
+                                <span>If they commit to the edge, isolate them entirely and push them off the pitch.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-shield-halved text-red-500 mt-1 text-sm"></i>
+                                <span>Control line speed vs slow ball. Manipulation of their options is key.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Protocol Details Grid -->
+        <section class="py-16 bg-[#070707]">
+            <div class="container mx-auto px-6 lg:px-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    
+                    <!-- WOLF -->
+                    <div>
+                        <div class="flex items-end gap-3 mb-8 border-b border-white/10 pb-4">
+                            <h3 class="font-oswald text-5xl text-white uppercase font-bold leading-none">Wolf</h3>
+                            <div class="border border-white/30 text-white text-xs font-mono-tech px-2 py-1 uppercase bg-white/10">
+                                Cycle 2
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div class="sharp-box p-5 flex justify-between items-center group border-l-2 border-l-transparent hover:border-l-blue-600 transition-all">
+                                <span class="font-oswald text-xl uppercase text-neutral-200 group-hover:text-white transition-colors">Hit The Ace</span>
+                                <span class="font-mono-tech text-xs text-green-500 uppercase border border-green-900/50 px-2 py-1 bg-green-950/20">Win</span>
+                            </div>
+                            <div class="sharp-box p-5 flex justify-between items-center group border-l-2 border-l-transparent hover:border-l-blue-600 transition-all">
+                                <span class="font-oswald text-xl uppercase text-neutral-200 group-hover:text-white transition-colors">Intercept</span>
+                                <span class="font-mono-tech text-xs text-green-500 uppercase border border-green-900/50 px-2 py-1 bg-green-950/20">Win</span>
+                            </div>
+                            <div class="sharp-box p-5 flex justify-between items-center group border-l-2 border-l-transparent hover:border-l-blue-600 transition-all">
+                                <span class="font-oswald text-xl uppercase text-neutral-200 group-hover:text-white transition-colors">Force back in (Stop edge play)</span>
+                                <span class="font-mono-tech text-xs text-green-500 uppercase border border-green-900/50 px-2 py-1 bg-green-950/20">Win</span>
+                            </div>
+                            <div class="sharp-box p-5 flex justify-between items-center group border-l-2 border-l-transparent hover:border-l-blue-600 transition-all">
+                                <span class="font-oswald text-xl uppercase text-neutral-200 group-hover:text-white transition-colors">Early pass and/or hold feet</span>
+                                <span class="font-mono-tech text-xs text-orange-500 uppercase border border-orange-900/50 px-2 py-1 bg-orange-950/20">Counter</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 flex flex-wrap gap-2">
+                            <span class="text-[10px] font-mono-tech text-neutral-500 border border-neutral-800 px-2 py-1 uppercase">Manipulation</span>
+                            <span class="text-[10px] font-mono-tech text-neutral-500 border border-neutral-800 px-2 py-1 uppercase">Intimidation</span>
+                            <span class="text-[10px] font-mono-tech text-neutral-500 border border-neutral-800 px-2 py-1 uppercase">IQ</span>
+                        </div>
+                    </div>
+
+                    <!-- SCOUT -->
+                    <div>
+                        <div class="flex items-end gap-3 mb-8 border-b border-white/10 pb-4">
+                            <h3 class="font-oswald text-5xl text-white uppercase font-bold leading-none">Scout</h3>
+                            <div class="border border-red-600/30 text-red-500 text-xs font-mono-tech px-2 py-1 uppercase bg-red-950/20">
+                                Last Defender
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div class="sharp-box p-5 flex justify-between items-center group border-l-2 border-l-transparent hover:border-l-red-600 transition-all">
+                                <span class="font-oswald text-xl uppercase text-neutral-200 group-hover:text-white transition-colors">Force back into B Channel</span>
+                                <span class="font-mono-tech text-xs text-green-500 uppercase border border-green-900/50 px-2 py-1 bg-green-950/20">Win</span>
+                            </div>
+                            <div class="sharp-box p-5 flex justify-between items-center group border-l-2 border-l-transparent hover:border-l-red-600 transition-all">
+                                <span class="font-oswald text-xl uppercase text-neutral-200 group-hover:text-white transition-colors">Isolate to edge (Off Pitch)</span>
+                                <span class="font-mono-tech text-xs text-green-500 uppercase border border-green-900/50 px-2 py-1 bg-green-950/20">Win</span>
+                            </div>
+                            <div class="sharp-box p-5 flex justify-between items-center group border-l-2 border-l-transparent hover:border-l-red-600 transition-all">
+                                <span class="font-oswald text-xl uppercase text-neutral-200 group-hover:text-white transition-colors">Dominate / Take Collision</span>
+                                <span class="font-mono-tech text-xs text-orange-500 uppercase border border-orange-900/50 px-2 py-1 bg-orange-950/20">Counter</span>
+                            </div>
+                            <div class="sharp-box p-5 flex justify-between items-center group border-l-2 border-l-transparent hover:border-l-red-600 transition-all">
+                                <span class="font-oswald text-xl uppercase text-neutral-200 group-hover:text-white transition-colors">Kick over / Turn</span>
+                                <span class="font-mono-tech text-xs text-orange-500 uppercase border border-orange-900/50 px-2 py-1 bg-orange-950/20">Counter</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 flex flex-wrap gap-2">
+                            <span class="text-[10px] font-mono-tech text-neutral-500 border border-neutral-800 px-2 py-1 uppercase">Pattern Recognition</span>
+                            <span class="text-[10px] font-mono-tech text-neutral-500 border border-neutral-800 px-2 py-1 uppercase">IQ</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-12 text-center border-t border-white/10 bg-[#070707]">
+        <div class="container mx-auto px-6">
+            <p class="font-mono-tech text-neutral-600 text-xs tracking-widest uppercase">
+                Hove RFC &copy; 2026 // Hannibal Defence Protocol // Strictly Confidential
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
